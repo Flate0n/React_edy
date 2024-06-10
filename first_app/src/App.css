@@ -1,0 +1,40 @@
+.app-wrapper{
+  display: grid;
+  margin: auto;
+  width: 800px;
+  grid-template-areas:
+  "h h "
+  "n  c  ";
+
+    grid-template-rows: 60px 1fr;
+      grid-template-columns: 2fr 10fr;
+  /*grid-gap: 10px;*/
+}
+.heder{
+  grid-area: h;
+  background-color: blue;
+}
+.heder img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+}
+.nav{
+  grid-area: n;
+  background-color: purple;
+}
+.content{
+  grid-area: c;
+  background-color: green;
+}
+.content img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 200px;
+}
+.ava img{
+  height: 150px;
+  width: 150px;
+}
