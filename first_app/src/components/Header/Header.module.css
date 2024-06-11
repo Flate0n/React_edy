@@ -1,0 +1,13 @@
+.heder{
+  grid-area: h;
+  text-align: center;
+  background-color: #3D5D6B;
+}
+.heder_img{
+  float: left;
+  width: 80px;
+}
+.heder_text{
+  vertical-align: top;
+  font-size: 7ch;
+}

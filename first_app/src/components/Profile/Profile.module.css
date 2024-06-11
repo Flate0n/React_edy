@@ -1,6 +1,6 @@
 .profile{
-    grid-area: c;
-    background-color: green;
+    grid-area: p;
+    background-color: #8FAABB;
   }
   .profile_heade_img{
     margin-left: auto;

@@ -1,0 +1,25 @@
+/*
+display: grid;
+margin: auto;
+width: 600px;
+grid-template-areas:
+"h h h"
+"n p p";
+
+grid-template-rows: 80px 8fr;
+grid-template-columns: 2fr 10fr;
+*/
+
+.head{
+  text-align: center;
+  font-size: 3ch;
+  color: black;
+}
+.newPost{
+  flex:auto;
+  display: grid;
+}
+.buttonCreatePost{
+  margin-left: auto;
+  width: 60px;
+}
