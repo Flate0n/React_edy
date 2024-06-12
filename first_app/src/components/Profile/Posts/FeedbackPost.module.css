@@ -1,0 +1,19 @@
+.feedback{
+  display: grid;
+  width: 100%;
+  height: 40px;
+  grid-template-columns:80px 80px;
+  grid-template-areas:
+  "l v";
+  
+}
+.likes{
+  grid-area:l;
+  width: 80px;
+}
+.views{
+  grid-area:v;
+  width: 80px;
+  vertical-align:10px;
+}
+

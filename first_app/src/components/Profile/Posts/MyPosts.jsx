@@ -16,16 +16,17 @@ const MyPosts = ()=> {
             <button className={profileName.buttonCreatePost}>Create</button>
             
           </div>
-          <Post avatar = {ava0} message = 'NYAAA :3' val_views = '345' val_likes = '340'/>
-          <Post avatar = {ava1} message = 'Where is Kobayashi-san???' val_views = '12' val_likes = '10'/>
+          <Post avatar = {ava0} message = 'NYAAA :3' viewsCount = '345' likesCount = '340'/>
+          <Post avatar = {ava1} message = 'Where is Kobayashi-san???' viewsCount = '9999' likesCount = '10'/>
           <Post avatar = {ava2} message = {
-          `Муку, сахар и щепотку соли смешайте.
+          `Рецепт оладушек :
+          Муку, сахар и щепотку соли смешайте.
           Яйцо взбейте с молоком, добавьте гашеную уксусом соду.
           Добавьте муку. Замесите до однородной массы.
           Тесто должно получиться густым. По необходимости добавьте еще муки.
           Порциями примерно со столовую ложку вылейте тесто на раскаленную сковороду.
-          Обжарьте оладушки с обеих сторон на среднем огне.`} val_views = '151' val_likes = '80'/>
-          <Post avatar = {ava3} message = 'Yes I heard about NEKO' val_views = '30' val_likes = '2'/>
+          Обжарьте оладушки с обеих сторон на среднем огне.`} viewsCount = '151' likesCount = '80'/>
+          <Post avatar = {ava3} message = 'Yes I heard about NEKO' viewsCount = '30' likesCount = '2'/>
       </div>
     )
         
