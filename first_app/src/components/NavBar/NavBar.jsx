@@ -1,12 +1,12 @@
-import nameNav from './NavBar.module.css'
-console.log(nameNav)
+import stule from './NavBar.module.css'
+
 const NavBar = ()=> {
-    return <nav className= {nameNav.nav}>
-    <div ><a className = {nameNav.item} href='#a' >Profile</a></div>
-    <div ><a className = {nameNav.item} href='#b' >Masseges</a></div>
-    <div ><a className = {`${nameNav.item} ${nameNav.active}`} href='#c'>News</a></div>
-    <div ><a className = {nameNav.item} href='#d' >Music</a></div>
-    <div ><a className = {nameNav.item} href='#s'>Settings</a></div>
+    return <nav className= {stule.nav}>
+    <div ><a className = {stule.item} href='/profile' >Profile</a></div>
+    <div ><a className = {stule.item} href='/dialogs' >Masseges</a></div>
+    <div ><a className = {stule.item} href='/news'>News</a></div>
+    <div ><a className = {stule.item} href='/music' >Music</a></div>
+    <div ><a className = {stule.item} href='/settings'>Settings</a></div>
   </nav>
         
 }

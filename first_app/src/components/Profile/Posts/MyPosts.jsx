@@ -26,7 +26,7 @@ const MyPosts = ()=> {
           Тесто должно получиться густым. По необходимости добавьте еще муки.
           Порциями примерно со столовую ложку вылейте тесто на раскаленную сковороду.
           Обжарьте оладушки с обеих сторон на среднем огне.`} viewsCount = '151' likesCount = '80'/>
-          <Post avatar = {ava3} message = 'Yes I heard about NEKO' viewsCount = '30' likesCount = '2'/>
+          <Post avatar = {ava3} message = 'Да, я слышала о NEKO' viewsCount = '30' likesCount = '2'/>
       </div>
     )
         

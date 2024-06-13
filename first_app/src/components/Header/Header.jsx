@@ -1,13 +1,13 @@
 
-import hederName from'./Header.module.css'
+import stule from'./Header.module.css'
 import icon from './icon.png'
 
 const Header = ()=> {
     return (
-        <heder className = {hederName.heder}> 
+        <heder className = {stule.heder}> 
 
-            <img className = {hederName.heder_img} src={icon}></img>
-            <text className = {hederName.heder_text} >Test page</text>  
+            <img className = {stule.heder_img} src={icon}></img>
+            <text className = {stule.heder_text} >Test page</text>  
 
         </heder>
     )
