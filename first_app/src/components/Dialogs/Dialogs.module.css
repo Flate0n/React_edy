@@ -1,0 +1,13 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+.dialogsItem{
+    padding: 5px;
+}
+.dialogsItem .active{
+    color: gold;
+}
+.masseges{
+    padding: 5px;
+}
