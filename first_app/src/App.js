@@ -11,7 +11,7 @@ import Settings from './components/Settings/Settings';
 // #FFB18A #7B5A6D #8FAABB #3D5D6B #B28986
 // <a target="_blank" href="https://icons8.com/icon/mKtR0FRkBY79/eye">просмотр</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a>
 
-
+const link=['/profile','/']
 function App() {
   return (
     <BrowserRouter>
@@ -21,7 +21,8 @@ function App() {
         <NavBar />
         <div className='app-wrapper-content'>
           <Routes>
-            <Route path='/dialogs' element={<Dialogs />} />
+          <Route path='/' element={<Dialogs />} />
+            <Route path='/dialogs/*' element={<Dialogs />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/news' element={<News />} />
             <Route path='/music' element={<Music />} />

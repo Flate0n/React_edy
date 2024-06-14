@@ -5,9 +5,15 @@
 .dialogsItem{
     padding: 5px;
 }
-.dialogsItem .active{
-    color: gold;
+.dialog{
+    color:#3D5D6B;
+    text-decoration: none;
 }
+.active{
+    color: gold;
+    text-decoration: none;
+}
+
 .masseges{
     padding: 5px;
 }
