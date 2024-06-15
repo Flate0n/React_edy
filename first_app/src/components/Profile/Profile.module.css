@@ -1,17 +1,23 @@
+/* .profile_heade {}
+ */
+.profile_heade_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 200px;
+}
 
-  .profile_heade_img{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 200px;
-  }
+.profile{
+  display: grid;
+  grid-template-columns: 150px 10fr;
+  margin-left: 5px;
+}
+.profile_avatar_img {
+  height: 150px;
+  width: 150px;
+}
 
-  .profile_avatar_img{
-    height: 150px;
-    width: 150px;
-  }
-  .profile_name{
-    vertical-align: top;
-    font-size: 3ch;
-  }
-  
+.profile_description {
+  vertical-align: top;
+  font-size: 3ch;
+}

@@ -9,17 +9,22 @@ grid-template-areas:
 grid-template-rows: 80px 8fr;
 grid-template-columns: 2fr 10fr;
 */
-
-.head{
-  text-align: center;
-  font-size: 3ch;
-  color: black;
-}
-.newPost{
+.postBlock{
   flex:auto;
   display: grid;
+  padding: 10px;
+  
 }
-.buttonCreatePost{
-  margin-left: auto;
+.newPost{
+  margin-right: 10px;
+}
+.postText{
+  width: 100%;
+  
+}
+.createPost{
   width: 60px;
+}
+.posts{
+  margin-top: 15px;
 }

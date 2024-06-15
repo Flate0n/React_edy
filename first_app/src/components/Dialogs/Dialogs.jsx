@@ -17,18 +17,32 @@ const Massege = (props) => {
 
 
 const Dialogs = (props) => {
+  let dialogDate = [
+    { id: 0, name: 'Mom' },
+    { id: 1, name: 'Dad' },
+    { id: 2, name: 'Seka' },
+    { id: 3, name: 'Timas' },
+    { id: 4, name: 'Me' }
+  ]
+  let massegeDate = [
+    { id: 0, massege: 'Hi' },
+    { id: 1, massege: 'What are you doing?' },
+    { id: 2, massege: 'Start working' }
+  ]
+
+  let dialogElements = dialogDate.map(d => <DialogsItem name={d.name} id={d.id} />)
+
+  let massegeElements = massegeDate.map(m => <Massege massege={m.massege} />)
+
+
   return (
     <div className={stule.dialogs} >
+
       <div className={stule.dialogsItem}>
-        <DialogsItem name='Mom' id='0' />
-        <DialogsItem name='Dad' id='1' />
-        <DialogsItem name='Seka' id='2' />
-        <DialogsItem name='Timas' id='3' />
+        {dialogElements}
       </div>
       <div className={stule.masseges}>
-        <Massege massege='Hi' />
-        <Massege massege='What are you doing?' />
-        <Massege massege='Start working' />
+        {massegeElements}
       </div>
     </div>
   )

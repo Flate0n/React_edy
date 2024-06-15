@@ -6,12 +6,14 @@ import MyPost from './Posts/MyPosts'
 const Profile = () => {
   return (
     <div>
-      <div>
+      <div className={stule.profile_heade} >
         <img className={stule.profile_heade_img} src={profile__header} />
       </div>
-      <div >
+      <div className={stule.profile}>
         <img className={stule.profile_avatar_img} src={ava} />
-        <text className={stule.profile_name}>Egor</text>
+        <div className={stule.profile_description} >
+          <text>Egor</text>
+        </div>
       </div>
       <MyPost />
     </div>
