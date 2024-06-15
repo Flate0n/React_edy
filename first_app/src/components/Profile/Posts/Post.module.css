@@ -17,10 +17,10 @@
 }
 .likes{
   grid-area:l;
-  width: 80px;
 }
-.views{
-  grid-area:v;
-  width: 80px;
-  vertical-align:10px;
+.likes_img{
+  width:30px;
+}
+.likes_img{
+  vertical-align:middle;
 }

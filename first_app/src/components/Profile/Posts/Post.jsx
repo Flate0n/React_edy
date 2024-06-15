@@ -1,22 +1,16 @@
 
 import stule from './Post.module.css'
-import likes_img from './img/like_img.png'
-import view_img from './img/view_img.png'
-
 
 const Post = (props) => {
+  /* console.log(props) */
   return (
     <div >
       <img className={stule.post_avatar} src={props.avatar}></img>
       <div>{props.message}</div>
       <div className={stule.feedback}>
         <div className={stule.likes}>
-          <img src={likes_img} />
-          {props.likesCount}
-        </div>
-        <div className={stule.views}>
-          <img src={view_img} />
-          {props.viewsCount}
+          <img className={stule.likes_img} src={props.likesImg} />
+          <text className={stule.likes_count} >{props.likesCount}</text>
         </div>
       </div>
     </div>
