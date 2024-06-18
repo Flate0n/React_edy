@@ -10,11 +10,11 @@ let OnOff = () => Math.floor(Math.random() * 3)
 
 const state = {
     profilePage: {
-        info:{
-            name:'Egor',
-            id : '2312',
-            ava : avatar_img,
-            wrapperHead : heade_img
+        info: {
+            name: 'Egor',
+            id: '2312',
+            ava: avatar_img,
+            wrapperHead: heade_img
         },
         likesImg: likes_img,
         posts: [
@@ -36,11 +36,11 @@ const state = {
     },
     dialogPage: {
         dialogs: [
-            { id: 0, name: 'Mom', ava: ava0 ,status : OnOff },
-            { id: 1, name: 'Dad', ava: ava1 ,status : OnOff },
-            { id: 2, name: 'Seka', ava: ava2 ,status : OnOff },
-            { id: 3, name: 'Timas', ava: ava3 ,status : OnOff },
-            { id: 4, name: 'Nikita', ava: ava0 ,status : OnOff }
+            { id: 0, name: 'Mom', ava: ava0, status: OnOff },
+            { id: 1, name: 'Dad', ava: ava1, status: OnOff },
+            { id: 2, name: 'Seka', ava: ava2, status: OnOff },
+            { id: 3, name: 'Timas', ava: ava3, status: OnOff },
+            { id: 4, name: 'Nikita', ava: ava0, status: OnOff }
         ],
         masseges: [
             { idperson: 0, id: 0, massege: 'Hi )' },
@@ -49,14 +49,18 @@ const state = {
             { idperson: 2, id: 2, massege: 'Start working' }
         ]
     },
-    pages:{
-        sideBar : [
+    pages: {
+        sideBar: [
             { link: '/profile', page: 'Profile' },
             { link: '/dialogs', page: 'Masseges' },
             { link: '/news', page: 'News' },
             { link: '/music', page: 'Music' },
-            { link: '/settings', page: 'Settings' }
-          ]
+            { link: '/settings', page: 'Settings' },
+        ],
+        Frd: [
+            { id: 2, name: 'Seka', ava: ava2, status: OnOff },
+            { id: 3, name: 'Timas', ava: ava3, status: OnOff },
+            { id: 4, name: 'Nikita', ava: ava0, status: OnOff }]
     }
 }
 export default state

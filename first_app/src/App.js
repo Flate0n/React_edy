@@ -14,7 +14,7 @@ function App(props) {
 
       <div className="app-wrapper">
         <Header />
-        <SideBar pages = {props.state.pages.sideBar} />
+        <SideBar pages = {props.state.pages} />
         <div className='app-wrapper-content'>
           <Routes>
             <Route path='/dialogs/*' element={<Dialogs dialogPage = {props.state.dialogPage}/>} />

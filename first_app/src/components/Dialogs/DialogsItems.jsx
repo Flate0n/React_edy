@@ -24,7 +24,6 @@ export const DialogsItem = (props) => {
 export const Massege = (props) => {
 
   let massegeElements = props.massege.map(m => {
-    console.log(m.id)
     if(m.id%2==0){
     return (
       <div className={stule.levo}  >
