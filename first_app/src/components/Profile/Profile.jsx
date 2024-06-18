@@ -3,11 +3,10 @@ import MyPost from './Posts/MyPosts'
 import ProfileInfo from './ProfileInfo/ProfileInfo'
 
 const Profile = (props) => {
- /*  console.log(props) */
   return (
     <div>
-      <ProfileInfo />
-      <MyPost dateP ={props.dateP} />
+      <ProfileInfo info={props.profile.info} />
+      <MyPost profilePosts ={props.profile} />
     </div>
   )
 

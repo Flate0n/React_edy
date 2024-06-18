@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/Header';
@@ -17,11 +17,11 @@ function App(props) {
 
       <div className="app-wrapper">
         <Header />
-        <NavBar dateN = {props.dateN} />
+        <NavBar pages = {props.state.pages.navBar} />
         <div className='app-wrapper-content'>
           <Routes>
-            <Route path='/dialogs/*' element={<Dialogs dateD ={props.dateD} dateM ={props.dateM}/>} />
-            <Route path='/profile' element={<Profile dateP ={props.dateP} />} />
+            <Route path='/dialogs/*' element={<Dialogs dialogPage = {props.state.dialogPage}/>} />
+            <Route path='/profile' element={<Profile profile ={props.state.profilePage} />} />
             <Route path='/news' element={<News />} />
             <Route path='/music' element={<Music />} />
             <Route path='/settings' element={<Settings />} />

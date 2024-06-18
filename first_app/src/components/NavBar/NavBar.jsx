@@ -7,7 +7,7 @@ const NavBar = (props) => {
 
   let activeLink = (({ isActive }) => isActive ? stule.active : stule.item)
 
-  const navBarElements = props.dateN.map(n => {
+  const navBarElements = props.pages.map(n => {
     return (
       <div>
         <NavLink to={n.link} className={activeLink} >{n.text}</NavLink>

@@ -1,18 +1,17 @@
 import stule from './ProfileInfo.module.css'
-import ava from './img/profile__ava.jpg'
-import profile_header_img from './img/profile__heder.jpg'
 
 
-const ProfileInfo = () => {
+
+const ProfileInfo = (props) => {
   return (
     <div>
-      <div className={stule.profile_heade} >
-        <img className={stule.profile_heade_img} src={profile_header_img} />
+     <div className={stule.profile_heade} >
+        <img className={stule.profile_heade_img} src={props.info.wrapperHead} />
       </div>
       <div className={stule.profile}>
-        <img className={stule.profile_avatar_img} src={ava} />
+        <img className={stule.profile_avatar_img} src={props.info.ava} />
         <div className={stule.profile_description} >
-          <text>Egor</text>
+          <text>{props.info.name}</text>
         </div>
       </div>
     </div>

@@ -5,7 +5,8 @@ import Post from './Post'
 
 const MyPosts = (props) => {
   /* console.log(props) */
-  let postElemetns = props.dateP.map(p => <Post avatar={p.ava} message={p.post} likesCount={p.likesCount} likesImg = {p.likesImg} />)
+  let postElemetns = props.profilePosts.posts.map( p => {return(
+  <Post avatar={p.ava} message={p.post} likesCount={p.likesCount} likesImg = {props.profilePosts.likesImg} />)})
   
   return (
     <div className={stule.postBlock}>

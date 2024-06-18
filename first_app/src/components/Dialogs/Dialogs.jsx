@@ -3,10 +3,9 @@ import {DialogsItem, Massege} from './DialogsItems'
 
 
 const Dialogs = (props) => {
+  let dialogElements = props.dialogPage.dialogs.map(d => <DialogsItem name={d.name} id={d.id} />)
 
-  let dialogElements = props.dateD.map(d => <DialogsItem name={d.name} id={d.id} />)
-
-  let massegeElements = props.dateM.map(m => <Massege massege={m.massege} />)
+  let massegeElements = props.dialogPage.masseges.map(m => <Massege massege={m.massege} />)
 
 
   return (

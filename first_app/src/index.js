@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { dialogDate, massegeDate } from './componentsDate/DialogsDate';
-import {postsDate} from './componentsDate/PostsDate'
-import {navBarDate} from './componentsDate/NavBarDate'
+import state from './redux/State'
 
-console.log(postsDate)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App dateD = {dialogDate} dateM = {massegeDate} dateP = {postsDate} dateN = {navBarDate}  />
+    <App state = {state}  />
   </React.StrictMode>
 );
 
