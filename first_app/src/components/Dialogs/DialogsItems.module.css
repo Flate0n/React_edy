@@ -1,0 +1,21 @@
+
+.dialog{
+    color:#263f47;
+    text-decoration: none;
+}
+.active{
+    color: gold;
+    text-decoration: none;
+}
+
+.avatar_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+.levo{
+    text-align: left;
+}
+.pravo{
+    text-align: right;
+}

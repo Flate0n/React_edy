@@ -1,23 +1,23 @@
 import { NavLink } from 'react-router-dom'
-import stule from './NavBar.module.css'
+import stule from './SideBar.module.css'
 
 
 
-const NavBar = (props) => {
+const SideBar = (props) => {
 
   let activeLink = (({ isActive }) => isActive ? stule.active : stule.item)
 
   const navBarElements = props.pages.map(n => {
     return (
       <div>
-        <NavLink to={n.link} className={activeLink} >{n.text}</NavLink>
+        <NavLink to={n.link} className={activeLink} >{n.page}</NavLink>
       </div>
     )
   })
 
-  return <nav className={stule.nav}>
+  return <div className={stule.bar}>
     {navBarElements}
-  </nav>
+  </div>
 
 }
-export default NavBar
+export default SideBar

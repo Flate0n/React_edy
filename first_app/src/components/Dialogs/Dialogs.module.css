@@ -1,19 +1,14 @@
-.dialogs{
+.dialogPage {
+    height: 100%;
     display: grid;
     grid-template-columns: 3fr 8fr;
 }
-.dialogsItem{
+
+.dialogs {
     padding: 5px;
-}
-.dialog{
-    color:#263f47;
-    text-decoration: none;
-}
-.active{
-    color: gold;
-    text-decoration: none;
 }
 
-.masseges{
-    padding: 5px;
+.masseges {
+    padding: 10px 40px 10px 40px;
+    background-color: #8fc0df;
 }

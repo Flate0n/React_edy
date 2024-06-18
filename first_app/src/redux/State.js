@@ -6,6 +6,8 @@ import likes_img from './img/like_img.png';
 import avatar_img from './profile/img/profile__ava.jpg';
 import heade_img from './profile/img/profile__heder.jpg';
 
+let OnOff = () => Math.floor(Math.random() * 3)
+
 const state = {
     profilePage: {
         info:{
@@ -34,26 +36,26 @@ const state = {
     },
     dialogPage: {
         dialogs: [
-            { id: 0, name: 'Mom' },
-            { id: 1, name: 'Dad' },
-            { id: 2, name: 'Seka' },
-            { id: 3, name: 'Timas' },
-            { id: 4, name: 'Me' }
+            { id: 0, name: 'Mom', ava: ava0 ,status : OnOff },
+            { id: 1, name: 'Dad', ava: ava1 ,status : OnOff },
+            { id: 2, name: 'Seka', ava: ava2 ,status : OnOff },
+            { id: 3, name: 'Timas', ava: ava3 ,status : OnOff },
+            { id: 4, name: 'Nikita', ava: ava0 ,status : OnOff }
         ],
         masseges: [
-            { idperson: 4, id: 0, massege: 'Hi )' },
-            { idperson: 4, id: 1, massege: 'What are you doing?' },
-            { idperson: 4, id: 1, massege: 'Haha' },
-            { idperson: 4, id: 2, massege: 'Start working' }
+            { idperson: 0, id: 0, massege: 'Hi )' },
+            { idperson: 2, id: 1, massege: 'What are you doing?' },
+            { idperson: 3, id: 1, massege: 'Haha' },
+            { idperson: 2, id: 2, massege: 'Start working' }
         ]
     },
     pages:{
-        navBar : [
-            { link: '/profile', text: 'Profile' },
-            { link: '/dialogs', text: 'Masseges' },
-            { link: '/news', text: 'News' },
-            { link: '/music', text: 'Music' },
-            { link: '/settings', text: 'Settings' }
+        sideBar : [
+            { link: '/profile', page: 'Profile' },
+            { link: '/dialogs', page: 'Masseges' },
+            { link: '/news', page: 'News' },
+            { link: '/music', page: 'Music' },
+            { link: '/settings', page: 'Settings' }
           ]
     }
 }
