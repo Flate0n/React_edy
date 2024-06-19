@@ -15,8 +15,16 @@ function App(props) {
       <SideBar pages={props.state.pages} />
       <div className='app-wrapper-content'>
         <Routes>
-          <Route path='/dialogs/*' element={<Dialogs dialogPage={props.state.dialogPage} />} />
-          <Route path='/profile' element={<Profile profile={props.state.profilePage} addPost={props.addPost} updateNewPostText={props.updateNewPostText} />} />
+          <Route path='/dialogs/*' element={<Dialogs
+            dialogPage={props.state.dialogPage}
+            addMassege={props.addMassege}
+            updateNewMassegeText={props.updateNewMassegeText}
+          />} />
+          <Route path='/profile' element={<Profile
+            profile={props.state.profilePage}
+            addPost={props.addPost}
+            updateNewPostText={props.updateNewPostText}
+          />} />
           <Route path='/news' element={<News />} />
           <Route path='/music' element={<Music />} />
           <Route path='/settings' element={<Settings />} />

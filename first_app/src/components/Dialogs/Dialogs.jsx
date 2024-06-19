@@ -6,10 +6,16 @@ import { DialogsItem, Massege } from './DialogsItems'
 
 const Dialogs = (props) => {
 
+
   let newMassege = React.createRef()
+
   let sendNewMassege = () => {
+    props.addMassege()
+  }
+
+  let onMassegeChange = () => {
     let massege = newMassege.current.value
-    alert(massege)
+    props.updateNewMassegeText(massege)
   }
 
   return (
@@ -20,8 +26,13 @@ const Dialogs = (props) => {
       <div className={stule.masseges} >
         <Massege massege={props.dialogPage.masseges} />
         <div className={stule.writeMassege} >
-          <textarea ref={newMassege} ></textarea>
-          <button onClick={sendNewMassege}>send</button>
+          <textarea
+            onChange={onMassegeChange}
+            ref={newMassege}
+            value={props.dialogPage.massegesEpty}
+          />
+          <button
+            onClick={sendNewMassege}>send</button>
         </div>
       </div>
     </div>

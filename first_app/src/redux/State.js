@@ -36,7 +36,7 @@ const state = {
                   Обжарьте оладушки с обеих сторон на среднем огне.`
                 , ava: ava2, likesCount: 10
             }],
-        newPostText : 'Add post' 
+        newPostText: ''
     },
     dialogPage: {
         dialogs: [
@@ -51,7 +51,8 @@ const state = {
             { idperson: 2, id: 1, massege: 'What are you doing?' },
             { idperson: 3, id: 1, massege: 'Haha' },
             { idperson: 2, id: 2, massege: 'Start working' }
-        ]
+        ],
+        massegesEpty: ''
     },
     pages: {
         sideBar: [
@@ -77,18 +78,37 @@ export const addPost = () => {
         likesCount: 0
     }
     state.profilePage.posts.push(post)
-    RenderEntierTree(state.profilePage.posts)
+    RenderEntierTree()
     updateNewPostText('')
 }
 
 export const updateNewPostText = (newText) => {
 
-state.profilePage.newPostText = newText
-    RenderEntierTree(state.profilePage.posts)
+    state.profilePage.newPostText = newText
+    RenderEntierTree()
 }
 
-export const subscribe = (observer) =>{
- RenderEntierTree = observer
+export const addMassege = () => { //текст сообщения в stage
+
+    let newMasse = {
+        idperson: 2,
+        id: 1,
+        massege: state.dialogPage.massegesEpty
+    }
+
+    state.dialogPage.masseges.push(newMasse)
+    RenderEntierTree()
+    updateNewMassegeText('')
+}
+
+export const updateNewMassegeText = (newText) => { //текст сообщения в textarea
+
+    state.dialogPage.massegesEpty = newText
+    RenderEntierTree()
+}
+
+export const subscribe = (observer) => {
+    RenderEntierTree = observer
 
 }
 

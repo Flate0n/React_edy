@@ -16,8 +16,8 @@ const MyPosts = (props) => {
 
 
   let addNewPost = () => {
-    let text = createNewPost.current.value
-    props.addPost(text)
+
+    props.addPost()
   }
 
   let onPostChange = () => {
@@ -39,7 +39,6 @@ const MyPosts = (props) => {
         <div >
           <button
             onClick={addNewPost}
-
             className={stule.createPost} >Create</button>
         </div>
       </div>
