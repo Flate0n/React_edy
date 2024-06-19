@@ -6,7 +6,11 @@ import likes_img from './img/like_img.png';
 import avatar_img from './profile/img/profile__ava.jpg';
 import heade_img from './profile/img/profile__heder.jpg';
 
-let OnOff = () => Math.floor(Math.random() * 3)
+let RenderEntierTree = () => {
+
+}
+
+const OnOff = () => Math.floor(Math.random() * 3)
 
 const state = {
     profilePage: {
@@ -31,8 +35,8 @@ const state = {
                   Порциями примерно со столовую ложку вылейте тесто на раскаленную сковороду.
                   Обжарьте оладушки с обеих сторон на среднем огне.`
                 , ava: ava2, likesCount: 10
-            },
-        ]
+            }],
+        newPostText : 'Add post' 
     },
     dialogPage: {
         dialogs: [
@@ -63,4 +67,29 @@ const state = {
             { id: 4, name: 'Nikita', ava: ava0, status: OnOff }]
     }
 }
+
+export const addPost = () => {
+
+    let post = {
+        id: 111,
+        post: state.profilePage.newPostText,
+        ava: ava0,
+        likesCount: 0
+    }
+    state.profilePage.posts.push(post)
+    RenderEntierTree(state.profilePage.posts)
+    updateNewPostText('')
+}
+
+export const updateNewPostText = (newText) => {
+
+state.profilePage.newPostText = newText
+    RenderEntierTree(state.profilePage.posts)
+}
+
+export const subscribe = (observer) =>{
+ RenderEntierTree = observer
+
+}
+
 export default state

@@ -8,8 +8,8 @@ export const DialogsItem = (props) => {
   let dialogElements = props.date.map(d => {
     return (
       <div className={stule.dialog}  >
-        <img className={stule.avatar_img} src={d.ava}></img>
         <NavLink className={activeLink} to={`/dialogs/${d.id}`}>
+        <img src={d.ava}></img>
           {d.name}
         </NavLink>
       </div>
@@ -20,11 +20,10 @@ export const DialogsItem = (props) => {
   return dialogElements 
 }
 
-
 export const Massege = (props) => {
 
   let massegeElements = props.massege.map(m => {
-    if(m.id%2==0){
+    if(m.id%2===0){
     return (
       <div className={stule.levo}  >
         {m.massege}

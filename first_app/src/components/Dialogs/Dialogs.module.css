@@ -5,10 +5,14 @@
 }
 
 .dialogs {
+    background-color: #3794ce;
     padding: 5px;
 }
 
 .masseges {
     padding: 10px 40px 10px 40px;
     background-color: #8fc0df;
+}
+.masseges textarea{
+    width:100%;
 }
